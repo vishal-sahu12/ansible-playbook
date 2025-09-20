@@ -1,0 +1,16 @@
+---
+- name: Making Files and content inside them
+  hosts: all
+
+  tasks: 
+  - name: files and content
+    file:
+      path: /root/ansible/hello.txt
+      mode: '0744'
+      state: touch
+  - name: Writing on file
+    copy:
+      dest: /root/ansible/hello.txt
+      content: |
+        Hii
+

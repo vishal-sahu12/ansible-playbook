@@ -1,0 +1,13 @@
+---
+- name: Testing of Ansible
+  hosts: all
+
+  tasks: 
+  - name: Making files in the Worker node
+    file: 
+      path: /root/ansible
+      state: directory
+      mode: '0777'
+      owner: root
+      group: root
+  

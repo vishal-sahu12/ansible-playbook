@@ -1,0 +1,13 @@
+---
+- name: Install multiple Software
+  hosts: all
+  tasks:
+  - name: Loops install
+    apt:
+      name: "{{ item }}"
+      state: present
+    loop:
+      - git
+      - wget
+      - vim
+
