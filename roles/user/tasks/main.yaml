@@ -1,0 +1,5 @@
+- name: User creation
+  user:
+    name: vishal
+    state: present
+    group: root

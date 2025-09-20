@@ -1,0 +1,3 @@
+- name: Script
+  shell: /root/ansible/test.sh
+  

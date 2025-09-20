@@ -1,0 +1,4 @@
+- name: Make the file in the Worker Node
+  file:
+    path: /root/ansible/role.txt
+    state: touch

@@ -1,0 +1,10 @@
+---
+- name: Practicin ROle
+  hosts: all
+
+  roles:
+    - db
+    - file
+    - scripts
+    - user
+      
